@@ -8,6 +8,8 @@ import Oscar from "./components/Oscar";
 import Person from "./components/Person";
 import PersonList from "./components/PersonList";
 import Status from "./components/Status";
+import LoggedIn from "./components/state/LoggedIn";
+import User from "./components/state/User";
 
 function App() {
   const personName = {
@@ -58,7 +60,11 @@ function App() {
       /> */}
 
       {/* Style Props */}
-      <Container styles={{ border: "1px solid #000", padding: "1rem" }} />
+      {/* <Container styles={{ border: "1px solid #000", padding: "1rem" }} /> */}
+
+      {/* useState Hook */}
+      <LoggedIn />
+      <User />
     </div>
   );
 }
