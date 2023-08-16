@@ -1,5 +1,6 @@
 import "./App.css";
 import Button from "./components/Button";
+import Container from "./components/Container";
 import Greet from "./components/Greet";
 import Heading from "./components/Heading";
 import Input from "./components/Input";
@@ -46,7 +47,7 @@ function App() {
       <Greet name="Vishwas" isLoggedIn={false} /> */}
 
       {/* Events as a prop */}
-      <Button
+      {/* <Button
         handleClick={(event, id) => console.log("Button is clicked", id)}
       ></Button>
       <Input
@@ -54,7 +55,10 @@ function App() {
         handleChange={(event) => {
           console.log(event);
         }}
-      />
+      /> */}
+
+      {/* Style Props */}
+      <Container styles={{ border: "1px solid #000", padding: "1rem" }} />
     </div>
   );
 }
